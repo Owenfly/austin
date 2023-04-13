@@ -12,7 +12,7 @@ public class AustinApplication {
     public static void main(String[] args) {
 
         /**
-         * 123
+         *
          * 如果你需要启动Apollo动态配置
          * 1、启动apollo
          * 2、将application.properties配置文件的 austin.apollo.enabled 改为true

@@ -9,8 +9,6 @@ import lombok.experimental.Accessors;
 
 /**
  * 发送/撤回接口的参数
- *
- * @author 3y
  */
 @Data
 @Accessors(chain = true)

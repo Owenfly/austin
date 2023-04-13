@@ -29,8 +29,6 @@ import java.lang.reflect.Field;
 import java.util.*;
 
 /**
- * @author 3y
- * @date 2021/11/22
  * @description 拼装参数
  */
 @Slf4j
@@ -49,10 +47,14 @@ public class AssembleAction implements BusinessProcess<SendTaskModel> {
 
         try {
             Optional<MessageTemplate> messageTemplate = messageTemplateDao.findById(messageTemplateId);
+
+            //找不到模板或模板已被删除
             if (!messageTemplate.isPresent() || messageTemplate.get().getIsDeleted().equals(CommonConstant.TRUE)) {
                 context.setNeedBreak(true).setResponse(BasicResultVO.fail(RespStatusEnum.TEMPLATE_NOT_FOUND));
                 return;
             }
+
+            //普通发送、撤回消息
             if (BusinessCode.COMMON_SEND.getCode().equals(context.getCode())) {
                 List<TaskInfo> taskInfos = assembleTaskInfo(sendTaskModel, messageTemplate.get());
                 sendTaskModel.setTaskInfo(taskInfos);

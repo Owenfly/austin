@@ -6,12 +6,14 @@ import com.java3y.austin.service.api.impl.action.AfterParamCheckAction;
 import com.java3y.austin.service.api.impl.action.AssembleAction;
 import com.java3y.austin.service.api.impl.action.PreParamCheckAction;
 import com.java3y.austin.service.api.impl.action.SendMqAction;
+import com.java3y.austin.support.pipeline.BusinessProcess;
 import com.java3y.austin.support.pipeline.ProcessController;
 import com.java3y.austin.support.pipeline.ProcessTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +21,6 @@ import java.util.Map;
 /**
  * api层的pipeline配置类
  *
- * @author 3y
  */
 @Configuration
 public class PipelineConfig {
@@ -44,10 +45,23 @@ public class PipelineConfig {
      */
     @Bean("commonSendTemplate")
     public ProcessTemplate commonSendTemplate() {
+
+        //ProcessTemplate processTemplate = new ProcessTemplate();
+        //processTemplate.setProcessList(Arrays.asList(preParamCheckAction, assembleAction,
+        //        afterParamCheckAction, sendMqAction));
+
         ProcessTemplate processTemplate = new ProcessTemplate();
-        processTemplate.setProcessList(Arrays.asList(preParamCheckAction, assembleAction,
-                afterParamCheckAction, sendMqAction));
+        ArrayList<BusinessProcess> processList = new ArrayList<>();
+
+        processList.add(preParamCheckAction);
+        processList.add(assembleAction);
+        processList.add(afterParamCheckAction);
+        processList.add(sendMqAction);
+
+        processTemplate.setProcessList(processList);
+
         return processTemplate;
+
     }
 
     /**

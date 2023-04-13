@@ -17,9 +17,9 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
- * @author 3y
- * @date 2021/11/22
+ *
  * @description 前置参数校验
+ *
  */
 @Slf4j
 @Service
@@ -39,7 +39,7 @@ public class PreParamCheckAction implements BusinessProcess<SendTaskModel> {
         }
 
         // 2.过滤 receiver=null 的messageParam
-        List<MessageParam> resultMessageParamList = messageParamList.stream()
+        List<MessageParam> resultMessageParamList = messageParamList.stream()  //将集合中的元素转换成流，以便后续过滤、排序、聚合等操作
                 .filter(messageParam -> !StrUtil.isBlank(messageParam.getReceiver()))
                 .collect(Collectors.toList());
         if (CollUtil.isEmpty(resultMessageParamList)) {

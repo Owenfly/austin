@@ -7,10 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
- * @author zzb
- * @since 2021.11.17
+ * 基本反馈结果
  */
-
 @Getter
 @ToString(callSuper = true)
 @AllArgsConstructor

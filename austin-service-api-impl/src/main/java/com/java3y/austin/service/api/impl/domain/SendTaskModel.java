@@ -12,8 +12,7 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
- * @author 3y
- * @date 2021/11/22
+ * @author wlp
  * @description 发送消息任务模型
  */
 @Data
