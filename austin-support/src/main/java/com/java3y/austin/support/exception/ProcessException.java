@@ -6,8 +6,8 @@ import com.java3y.austin.support.pipeline.ProcessContext;
 import java.util.Objects;
 
 /**
- * @author SamLee
- * @since 2022-03-29
+ * @author wlp
+ * @description 异常信息处理
  */
 public class ProcessException extends RuntimeException {
 

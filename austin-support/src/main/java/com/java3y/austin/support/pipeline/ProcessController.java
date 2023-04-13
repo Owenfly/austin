@@ -14,9 +14,8 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * 流程控制器
- *
- * @author 3y
+ * @author wlp
+ * @description 流程控制器
  */
 @Slf4j
 @Data
@@ -66,7 +65,7 @@ public class ProcessController {
      * @throws ProcessException 异常信息
      */
     private void preCheck(ProcessContext context) throws ProcessException {
-        // 上下文
+        // 上下文为空处理
         if (Objects.isNull(context)) {
             context = new ProcessContext();
             context.setResponse(BasicResultVO.fail(RespStatusEnum.CONTEXT_IS_NULL));

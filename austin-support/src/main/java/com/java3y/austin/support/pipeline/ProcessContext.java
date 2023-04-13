@@ -24,7 +24,8 @@ public class ProcessContext<T extends ProcessModel> {
     private String code;
 
     /**
-     * 存储责任链上下文数据的模型
+     * 存储责任链上下文数据
+     * 记录上文结果的载体
      */
     private T processModel;
 
@@ -37,5 +38,10 @@ public class ProcessContext<T extends ProcessModel> {
      * 流程处理的结果
      */
     BasicResultVO response;
+
+    //private String code;
+    //private T processModel;
+    //private Boolean needBreak;
+    //BasicResultVO response;
 
 }

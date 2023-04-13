@@ -43,7 +43,7 @@ public enum RespStatusEnum {
 
 
     /**
-     * pipeline
+     * pipeline 责任链模式
      */
     CONTEXT_IS_NULL("P0001", "流程上下文为空"),
     BUSINESS_CODE_IS_NULL("P0002", "业务代码为空"),
