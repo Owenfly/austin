@@ -17,9 +17,8 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
- *
+ * @author wlp
  * @description 前置参数校验
- *
  */
 @Slf4j
 @Service
@@ -32,13 +31,13 @@ public class PreParamCheckAction implements BusinessProcess<SendTaskModel> {
         Long messageTemplateId = sendTaskModel.getMessageTemplateId();
         List<MessageParam> messageParamList = sendTaskModel.getMessageParamList();
 
-        // 1.没有传入 消息模板Id 或者 messageParam
+        // 1.判断有无传入消息模板id 或者 消息参数列表
         if (Objects.isNull(messageTemplateId) || CollUtil.isEmpty(messageParamList)) {
             context.setNeedBreak(true).setResponse(BasicResultVO.fail(RespStatusEnum.CLIENT_BAD_PARAMETERS));
             return;
         }
 
-        // 2.过滤 receiver=null 的messageParam
+        // 2、过滤掉 recevier为空 的messageParam
         List<MessageParam> resultMessageParamList = messageParamList.stream()  //将集合中的元素转换成流，以便后续过滤、排序、聚合等操作
                 .filter(messageParam -> !StrUtil.isBlank(messageParam.getReceiver()))
                 .collect(Collectors.toList());
