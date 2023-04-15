@@ -17,7 +17,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 /**
- * @author 3y
+ * @author wlp
  * 将消息发送到MQ
  */
 @Slf4j
@@ -38,7 +38,6 @@ public class SendMqAction implements BusinessProcess<SendTaskModel> {
 
     @Value("${austin.mq.pipeline}")
     private String mqPipeline;
-
 
     @Override
     public void process(ProcessContext<SendTaskModel> context) {

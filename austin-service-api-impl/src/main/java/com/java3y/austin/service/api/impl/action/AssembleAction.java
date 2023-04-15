@@ -115,7 +115,7 @@ public class AssembleAction implements BusinessProcess<SendTaskModel> {
         JSONObject jsonObject = JSON.parseObject(messageTemplate.getMsgContent());
 
 
-        // 通过反射 组装出 contentModel
+        // 通过反射组装出 contentModel
         Field[] fields = ReflectUtil.getFields(contentModelClass);
         ContentModel contentModel = ReflectUtil.newInstance(contentModelClass);
         for (Field field : fields) {

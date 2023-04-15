@@ -73,8 +73,16 @@ public class PipelineConfig {
      */
     @Bean("recallMessageTemplate")
     public ProcessTemplate recallMessageTemplate() {
+        //ProcessTemplate processTemplate = new ProcessTemplate();
+        //processTemplate.setProcessList(Arrays.asList(assembleAction, sendMqAction));
+
         ProcessTemplate processTemplate = new ProcessTemplate();
-        processTemplate.setProcessList(Arrays.asList(assembleAction, sendMqAction));
+        ArrayList<BusinessProcess> processList = new ArrayList<>();
+        processList.add(assembleAction);
+        processList.add(sendMqAction);
+
+        processTemplate.setProcessList(processList);
+
         return processTemplate;
     }
 

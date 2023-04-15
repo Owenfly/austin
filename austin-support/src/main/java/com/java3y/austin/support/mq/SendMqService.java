@@ -2,7 +2,7 @@ package com.java3y.austin.support.mq;
 
 
 /**
- * @author 3y
+ * @author wlp
  * 发送数据至消息队列
  */
 public interface SendMqService {

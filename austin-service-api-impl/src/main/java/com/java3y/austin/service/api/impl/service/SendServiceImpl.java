@@ -17,7 +17,7 @@ import java.util.Collections;
 /**
  * 发送接口
  *
- * @author 3y
+ * @author wlp
  */
 @Service
 public class SendServiceImpl implements SendService {
