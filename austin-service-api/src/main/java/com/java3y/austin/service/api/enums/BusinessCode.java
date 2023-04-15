@@ -20,7 +20,6 @@ public enum BusinessCode {
      */
     RECALL("recall", "撤回消息");
 
-
     /**
      * code 关联着责任链的模板
      */

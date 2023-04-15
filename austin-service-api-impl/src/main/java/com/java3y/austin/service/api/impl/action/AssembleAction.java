@@ -29,7 +29,8 @@ import java.lang.reflect.Field;
 import java.util.*;
 
 /**
- * @description 拼装参数
+ * @author wlp
+ * @description 组装参数，通过id获取详细消息
  */
 @Slf4j
 @Service

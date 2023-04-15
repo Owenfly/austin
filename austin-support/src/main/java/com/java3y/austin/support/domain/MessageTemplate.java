@@ -22,7 +22,7 @@ import java.io.Serializable;
 /**
  *
  * 消息模板DO
- * @author 3y
+ * @author wlp
  */
 public class MessageTemplate implements Serializable {
 
