@@ -17,7 +17,6 @@ import java.util.concurrent.ExecutorService;
 /**
  * 存储 每种消息类型 与 TaskPending 的关系
  *
- * @author 3y
  */
 @Component
 public class TaskPendingHolder {

@@ -1,7 +1,6 @@
 package com.zust.austin.common.enums;
 
 /**
- * @author kyw7
  * 枚举接口
  */
 interface PowerfulEnum {

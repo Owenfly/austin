@@ -19,12 +19,13 @@ import java.util.HashSet;
 /**
  * 屏蔽服务
  *
- * @author 3y
+ * @author wlp
  */
 @Service
 @Slf4j
 public class ShieldServiceImpl implements ShieldService {
 
+    //设置夜晚屏蔽，第二天执行
     private static final String NIGHT_SHIELD_BUT_NEXT_DAY_SEND_KEY = "night_shield_send";
 
     private static final long SECONDS_OF_A_DAY = 86400L;
@@ -36,27 +37,32 @@ public class ShieldServiceImpl implements ShieldService {
     @Override
     public void shield(TaskInfo taskInfo) {
 
+        //夜间不屏蔽
         if (ShieldType.NIGHT_NO_SHIELD.getCode().equals(taskInfo.getShieldType())) {
             return;
         }
 
         /**
-         * example:当消息下发至austin平台时，已经是凌晨1点，业务希望此类消息在次日的早上9点推送
-         * (配合 分布式任务定时任务框架搞掂)
+         * 结合 分布式任务定时任务
          */
         if (isNight()) {
             if (ShieldType.NIGHT_SHIELD.getCode().equals(taskInfo.getShieldType())) {
-                logUtils.print(AnchorInfo.builder().state(AnchorState.NIGHT_SHIELD.getCode())
-                        .businessId(taskInfo.getBusinessId()).ids(taskInfo.getReceiver()).build());
+                logUtils.print(AnchorInfo.builder()
+                        .state(AnchorState.NIGHT_SHIELD.getCode())
+                        .businessId(taskInfo.getBusinessId())
+                        .ids(taskInfo.getReceiver()).build());
             }
             if (ShieldType.NIGHT_SHIELD_BUT_NEXT_DAY_SEND.getCode().equals(taskInfo.getShieldType())) {
                 redisUtils.lPush(NIGHT_SHIELD_BUT_NEXT_DAY_SEND_KEY, JSON.toJSONString(taskInfo,
-                                SerializerFeature.WriteClassName),
-                        SECONDS_OF_A_DAY);
-                logUtils.print(AnchorInfo.builder().state(AnchorState.NIGHT_SHIELD_NEXT_SEND.getCode()).businessId(taskInfo.getBusinessId()).ids(taskInfo.getReceiver()).build());
+                        SerializerFeature.WriteClassName),SECONDS_OF_A_DAY);
+                logUtils.print(AnchorInfo.builder()
+                        .state(AnchorState.NIGHT_SHIELD_NEXT_SEND.getCode())
+                        .businessId(taskInfo.getBusinessId())
+                        .ids(taskInfo.getReceiver()).build());
             }
             taskInfo.setReceiver(new HashSet<>());
         }
+
     }
 
     /**
@@ -66,7 +72,6 @@ public class ShieldServiceImpl implements ShieldService {
      */
     private boolean isNight() {
         return LocalDateTime.now().getHour() < 8;
-
     }
 
 }

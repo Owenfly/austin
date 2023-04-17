@@ -5,7 +5,7 @@ import com.zust.austin.common.domain.TaskInfo;
 /**
  * 屏蔽服务
  *
- * @author 3y
+ * @author wlp
  */
 public interface ShieldService {
 

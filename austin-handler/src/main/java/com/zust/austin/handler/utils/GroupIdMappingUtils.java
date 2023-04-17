@@ -1,6 +1,5 @@
 package com.zust.austin.handler.utils;
 
-
 import com.zust.austin.common.domain.TaskInfo;
 import com.zust.austin.common.enums.ChannelType;
 import com.zust.austin.common.enums.EnumUtil;
@@ -10,15 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * groupId 标识着每一个消费者组
- *
- * @author 3y
+ * @author wlp
+ * @description 获取消费者ID
  */
 public class GroupIdMappingUtils {
 
     /**
      * 获取所有的groupIds
-     * (不同的渠道不同的消息类型拥有自己的groupId)
+     * @return
      */
     public static List<String> getAllGroupIds() {
         List<String> groupIds = new ArrayList<>();
@@ -31,12 +29,6 @@ public class GroupIdMappingUtils {
     }
 
 
-    /**
-     * 根据TaskInfo获取当前消息的groupId
-     *
-     * @param taskInfo
-     * @return
-     */
     public static String getGroupIdByTaskInfo(TaskInfo taskInfo) {
         String channelCodeEn = EnumUtil.getEnumByCode(taskInfo.getSendChannel(), ChannelType.class).getCodeEn();
         String msgCodeEn = EnumUtil.getEnumByCode(taskInfo.getMsgType(), MessageType.class).getCodeEn();

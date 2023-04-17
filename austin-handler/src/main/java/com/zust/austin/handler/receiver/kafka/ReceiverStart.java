@@ -23,8 +23,6 @@ import java.util.Optional;
 /**
  * 启动消费者
  *
- * @author 3y
- * @date 2021/12/4
  */
 @Service
 @ConditionalOnProperty(name = "austin.mq.pipeline", havingValue = MessageQueuePipeline.KAFKA)
@@ -63,6 +61,7 @@ public class ReceiverStart {
 
     /**
      * 给每个Receiver对象的consumer方法 @KafkaListener赋值相应的groupId
+     * 这里做动态切面
      */
     @Bean
     public static KafkaListenerAnnotationBeanPostProcessor.AnnotationEnhancer groupIdEnhancer() {

@@ -8,7 +8,7 @@ import lombok.ToString;
 /**
  * 打点信息枚举
  *
- * @author 3y
+ * @author wlp
  */
 @Getter
 @ToString
@@ -58,6 +58,7 @@ public enum AnchorState implements PowerfulEnum {
      */
     CLICK(64, "消息被点击"),
     ;
+
 
 
     private final Integer code;
