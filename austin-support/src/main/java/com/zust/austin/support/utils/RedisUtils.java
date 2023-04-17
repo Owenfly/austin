@@ -16,9 +16,8 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * @author 3y
- * @date 2021/12/10
- * 对Redis的某些操作二次封装
+ *
+ * 对Redis进行二次封装
  */
 @Component
 @Slf4j

@@ -12,14 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-/**
- * 所有的日志都存在
- *
- * @author 3y
- */
 @Slf4j
 @Component
-public class LogUtils extends CustomLogListener {
+public class LogUtils extends CustomLogListener{
 
     @Autowired
     private SendMqService sendMqService;
@@ -27,16 +22,14 @@ public class LogUtils extends CustomLogListener {
     @Value("${austin.business.log.topic.name}")
     private String topicName;
 
-    /**
-     * 方法切面的日志 @OperationLog 所产生
-     */
     @Override
     public void createLog(LogDTO logDTO) throws Exception {
         log.info(JSON.toJSONString(logDTO));
     }
 
     /**
-     * 记录当前对象信息
+     * 当前对象信息
+     * @param logParam
      */
     public void print(LogParam logParam) {
         logParam.setTimestamp(System.currentTimeMillis());
@@ -44,7 +37,8 @@ public class LogUtils extends CustomLogListener {
     }
 
     /**
-     * 记录打点信息
+     * 打点信息
+     * @param anchorInfo
      */
     public void print(AnchorInfo anchorInfo) {
         anchorInfo.setLogTimestamp(System.currentTimeMillis());
@@ -66,4 +60,11 @@ public class LogUtils extends CustomLogListener {
         print(anchorInfo);
         print(logParam);
     }
+
+
+
+
+
+
+
 }

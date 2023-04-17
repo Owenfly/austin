@@ -8,8 +8,6 @@ package com.zust.austin.support.constans;
 public interface MessageQueuePipeline {
     String EVENT_BUS = "eventBus";
     String KAFKA = "kafka";
-    String ROCKET_MQ = "rocketMq";
-    String RABBIT_MQ = "rabbitMq";
     String SPRING_EVENT_BUS = "springEventBus";
 
 }
