@@ -27,13 +27,8 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * @author 3y
- * @date 2021/11/6
- * 1. 发送短信接入文档：https://cloud.tencent.com/document/api/382/55981
- * 2. 推荐直接使用SDK调用
- * 3. 推荐使用API Explorer 生成代码
+ * 腾讯云短信接口
  */
-
 @Slf4j
 @Component("TencentSmsScript")
 public class TencentSmsScript implements SmsScript {
