@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author 3y
  * 钉钉 自定义机器人
  * <p>
  * https://open.dingtalk.com/document/group/custom-robot-access

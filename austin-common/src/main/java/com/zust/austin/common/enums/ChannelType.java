@@ -11,7 +11,6 @@ import java.util.Objects;
 /**
  * 发送渠道类型枚举
  *
- * @author 3y
  */
 @Getter
 @ToString
@@ -19,10 +18,6 @@ import java.util.Objects;
 public enum ChannelType implements PowerfulEnum {
 
 
-    /**
-     * IM(站内信)  -- 未实现该渠道
-     */
-    IM(10, "IM(站内信)", ImContentModel.class, "im.wlp"),
     /**
      * push(通知栏) --安卓 已接入 个推
      */

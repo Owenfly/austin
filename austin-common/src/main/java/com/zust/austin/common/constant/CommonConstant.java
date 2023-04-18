@@ -2,7 +2,7 @@ package com.zust.austin.common.constant;
 
 
 /**
- * @author 3y
+ * @author wlp
  */
 public class CommonConstant {
 

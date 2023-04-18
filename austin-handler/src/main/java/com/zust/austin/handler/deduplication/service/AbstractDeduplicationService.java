@@ -14,8 +14,7 @@ import javax.annotation.PostConstruct;
 import java.util.Set;
 
 /**
- * @author 3y
- * @date 2021/12/9
+ * @author wlp
  * 去重服务
  */
 @Slf4j
@@ -59,6 +58,7 @@ public abstract class AbstractDeduplicationService implements DeduplicationServi
      * @return
      */
     public abstract String deduplicationSingleKey(TaskInfo taskInfo, String receiver);
+
 
 
 }

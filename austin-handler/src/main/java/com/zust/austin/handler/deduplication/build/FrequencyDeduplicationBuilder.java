@@ -11,12 +11,11 @@ import java.util.Date;
 import java.util.Objects;
 
 /**
- * @author huskey
- * @date 2022/1/18
+ * 消息频次去重参数
  */
-
 @Service
 public class FrequencyDeduplicationBuilder extends AbstractDeduplicationBuilder implements Builder {
+
     public FrequencyDeduplicationBuilder() {
         deduplicationType = DeduplicationType.FREQUENCY.getCode();
     }

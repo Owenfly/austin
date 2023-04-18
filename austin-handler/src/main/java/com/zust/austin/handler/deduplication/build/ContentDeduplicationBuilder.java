@@ -8,10 +8,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.Objects;
 
-
 /**
- * @author huskey
- * @date 2022/1/18
+ * 消息内容去重参数
  */
 @Service
 public class ContentDeduplicationBuilder extends AbstractDeduplicationBuilder implements Builder {

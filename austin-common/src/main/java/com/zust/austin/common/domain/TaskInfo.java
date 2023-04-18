@@ -26,7 +26,6 @@ public class TaskInfo {
 
     /**
      * 业务Id(数据追踪使用)
-     * 生成逻辑参考 TaskInfoUtils
      */
     private Long businessId;
 
@@ -63,8 +62,7 @@ public class TaskInfo {
     /**
      * 发送文案模型
      * message_template表存储的content是JSON(所有内容都会塞进去)
-     * 不同的渠道要发送的内容不一样(比如发push会有img，而短信没有)
-     * 所以会有ContentModel
+     * 用于存储每个渠道要发送的内容
      */
     private ContentModel contentModel;
 

@@ -10,8 +10,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 /**
- * @author 3y
- * @date 2021/12/11
+ * @author wlp
  * 内容去重服务（默认5分钟相同的文案发给相同的用户去重）
  */
 @Service

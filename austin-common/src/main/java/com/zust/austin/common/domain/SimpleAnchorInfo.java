@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 /**
  * 简单的埋点信息
  *
- * @author 3y
+ * @author wlp
  */
 @Data
 @Builder
@@ -24,7 +24,6 @@ public class SimpleAnchorInfo {
 
     /**
      * 业务Id(数据追踪使用)
-     * 生成逻辑参考 TaskInfoUtils
      */
     private Long businessId;
 

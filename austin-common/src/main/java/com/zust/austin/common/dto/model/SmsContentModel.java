@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author 3y
  * <p>
  * 短信内容模型
  * <p>

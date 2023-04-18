@@ -32,6 +32,8 @@ public enum AnchorState implements PowerfulEnum {
      */
     NIGHT_SHIELD_NEXT_SEND(24, "夜间屏蔽(次日早上9点发送)"),
 
+
+
     /**
      * 消息被内容去重（重复内容5min内多次发送）
      */
@@ -40,6 +42,8 @@ public enum AnchorState implements PowerfulEnum {
      * 消息被频次去重（同一个渠道短时间内发送多次消息给用户）
      */
     RULE_DEDUPLICATION(40, "消息被频次去重"),
+
+
     /**
      * 白名单过滤（非正式环境，不在白名单内）
      */

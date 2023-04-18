@@ -4,7 +4,7 @@ package com.zust.austin.common.constant;
 /**
  * 发送账号的常量信息汇总
  *
- * @author 3y
+ * @author wlp
  */
 public class SendAccountConstant {
 

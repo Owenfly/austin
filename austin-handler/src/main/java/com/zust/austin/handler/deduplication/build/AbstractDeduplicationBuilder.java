@@ -9,10 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.annotation.PostConstruct;
 import java.util.Objects;
 
-/**
- * @author 3y
- * @date 2022/1/19
- */
+
 public abstract class AbstractDeduplicationBuilder implements Builder {
 
     protected Integer deduplicationType;

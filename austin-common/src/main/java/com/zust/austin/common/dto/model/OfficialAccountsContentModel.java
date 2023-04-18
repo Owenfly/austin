@@ -7,9 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.Map;
 
-/**
- * @author 3y
- */
+
 @Data
 @Builder
 @AllArgsConstructor
