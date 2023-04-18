@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 
 
 /**
- * @author 3y
+ *
  * 读取配置实现类
  */
 @Service

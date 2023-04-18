@@ -32,7 +32,7 @@ import java.util.Set;
  * <p>
  * (目前具体的实现是个推服务商，安卓端已验证)
  *
- * @author 3y
+ * @author wlp
  */
 @Component
 @Slf4j

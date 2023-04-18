@@ -23,7 +23,7 @@ import java.util.Map;
  * 使用微信服务号作为登录的媒介
  * (测试环境 && 开启了配置才使用)
  *
- * @author 3y
+ *
  */
 @Profile("test")
 @Configuration("weChatLoginConfig")

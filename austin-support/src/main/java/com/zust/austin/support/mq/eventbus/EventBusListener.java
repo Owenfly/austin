@@ -7,7 +7,7 @@ import com.zust.austin.support.domain.MessageTemplate;
 import java.util.List;
 
 /**
- * @author 3y
+ *
  * 监听器
  */
 public interface EventBusListener {

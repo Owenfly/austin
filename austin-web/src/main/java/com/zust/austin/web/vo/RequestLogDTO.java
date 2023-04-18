@@ -6,12 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * @author kl
- * @version 1.0.0
- * @description 请求日志Vo
- * @date 2023/2/23 9:20
- */
+
 @Data
 @Builder
 @AllArgsConstructor

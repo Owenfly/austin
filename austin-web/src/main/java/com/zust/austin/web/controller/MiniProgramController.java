@@ -28,7 +28,6 @@ import java.util.Objects;
 /**
  * 微信服务号
  *
- * @author 3y
  */
 @Slf4j
 @AustinAspect

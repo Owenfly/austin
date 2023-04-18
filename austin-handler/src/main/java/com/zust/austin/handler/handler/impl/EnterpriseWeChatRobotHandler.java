@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * 企业微信群机器人 消息处理器
  *
- * @author 3y
+ * @author wlp
  */
 @Slf4j
 @Service

@@ -12,9 +12,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 
-/**
- * @author 3y
- */
+
 @Component("unSubscribeHandler")
 @Slf4j
 public class UnSubscribeHandler implements WxMpMessageHandler {

@@ -10,7 +10,7 @@ import org.springframework.http.MediaType;
 import java.util.List;
 
 /**
- * @author kl
+ * @author wlp
  * @version 1.0.0
  * @description 通用配置
  * @date 2023/2/23 10:40

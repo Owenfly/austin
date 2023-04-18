@@ -13,12 +13,7 @@ import org.springframework.util.StringUtils;
 import java.io.StringReader;
 import java.util.Properties;
 
-/**
- * @program: austin
- * @description:
- * @author: Giorno
- * @create: 2022-07-28
- **/
+
 @Slf4j
 @Component
 public class NacosUtils {

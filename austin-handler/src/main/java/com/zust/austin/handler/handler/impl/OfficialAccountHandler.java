@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author zyg
+ * @author wlp
  * 微信服务号推送处理
  */
 @Component

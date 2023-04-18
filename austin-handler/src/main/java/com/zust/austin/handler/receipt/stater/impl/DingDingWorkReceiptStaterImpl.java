@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 拉取 钉钉工作消息的回执 内容 【未完成】
  *
- * @author 3y
+ * @author wlp
  */
 public class DingDingWorkReceiptStaterImpl implements ReceiptMessageStater {
 

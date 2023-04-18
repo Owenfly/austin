@@ -7,10 +7,7 @@ import java.lang.annotation.*;
 
 /**
  * 单机限流注解
- * Created by TOM
- * On 2022/7/21 17:03
  *
- * @author TOM
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

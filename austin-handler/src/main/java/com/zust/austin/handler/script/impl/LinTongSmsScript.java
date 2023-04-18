@@ -23,17 +23,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.*;
 
-/**
- * <span>Form File</span>
- * <p>Description</p>
- * <p>Company:QQ 752340543</p>
- *
- * @author topsuder
- * @version v1.0.0
- * @DATE 2022/11/24-14:29
- * @Description
- * @see com.java3y.austin.handler.script.impl austin
- */
+
 @Slf4j
 @Component("LinTongSmsScript")
 public class LinTongSmsScript implements SmsScript {

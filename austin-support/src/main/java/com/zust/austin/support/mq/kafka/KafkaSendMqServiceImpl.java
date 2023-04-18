@@ -19,7 +19,7 @@ import java.util.List;
 
 
 /**
- * @author 3y
+ *
  * kafka 发送实现类
  */
 @Slf4j

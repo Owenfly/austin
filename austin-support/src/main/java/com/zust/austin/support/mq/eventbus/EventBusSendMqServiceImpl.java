@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 
 /**
- * @author 3y
+ *
  * EventBus 发送实现类
  */
 @Slf4j

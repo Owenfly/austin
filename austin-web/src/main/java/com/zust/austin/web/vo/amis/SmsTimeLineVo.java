@@ -8,9 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-/**
- * @author 3y
- */
+
 @Data
 @Builder
 @AllArgsConstructor

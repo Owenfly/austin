@@ -7,12 +7,7 @@ import com.zust.austin.handler.flowcontrol.FlowControlParam;
 import com.zust.austin.handler.flowcontrol.FlowControlService;
 import com.zust.austin.handler.flowcontrol.annotations.LocalRateLimit;
 
-/**
- * Created by TOM
- * On 2022/7/21 17:14
- *
- * @author TOM
- */
+
 @LocalRateLimit(rateLimitStrategy = RateLimitStrategy.SEND_USER_NUM_RATE_LIMIT)
 public class SendUserNumRateLimitServiceImpl implements FlowControlService {
 

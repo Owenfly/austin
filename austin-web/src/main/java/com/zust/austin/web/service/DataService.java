@@ -8,7 +8,6 @@ import com.zust.austin.web.vo.amis.UserTimeLineVo;
 /**
  * 数据链路追踪获取接口
  *
- * @author 3y
  */
 public interface DataService {
 

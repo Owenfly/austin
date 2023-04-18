@@ -41,7 +41,6 @@ import java.util.*;
 /**
  * 微信服务号
  *
- * @author 3y
  */
 @Slf4j
 @AustinAspect

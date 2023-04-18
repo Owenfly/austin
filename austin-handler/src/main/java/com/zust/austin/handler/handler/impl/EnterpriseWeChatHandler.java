@@ -31,7 +31,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 3y
+ * @author wlp
  * 企业微信推送处理
  */
 @Component

@@ -31,7 +31,7 @@ import java.util.concurrent.ConcurrentMap;
 /**
  * 获取账号信息工具类
  *
- * @author 3y
+ * @author wlp
  */
 @Slf4j
 @Configuration

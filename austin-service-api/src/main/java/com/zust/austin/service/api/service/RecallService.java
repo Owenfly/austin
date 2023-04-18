@@ -6,7 +6,6 @@ import com.zust.austin.service.api.domain.SendResponse;
 /**
  * 撤回接口
  *
- * @author 3y
  */
 public interface RecallService {
 

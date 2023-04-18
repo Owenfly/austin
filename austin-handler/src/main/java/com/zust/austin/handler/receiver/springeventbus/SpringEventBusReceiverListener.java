@@ -11,12 +11,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Service;
 
-/**
- * 描述：
- *
- * @author tony
- * @date 2023/2/6 11:19
- */
+
 @Service
 @ConditionalOnProperty(name = "austin.mq.pipeline", havingValue = MessageQueuePipeline.SPRING_EVENT_BUS)
 public class SpringEventBusReceiverListener implements ApplicationListener<AustinSpringEventBusEvent> {

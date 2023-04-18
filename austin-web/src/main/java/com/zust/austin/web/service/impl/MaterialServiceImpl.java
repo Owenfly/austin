@@ -32,9 +32,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 
-/**
- * @author 3y
- */
+
 @Slf4j
 @Service
 public class MaterialServiceImpl implements MaterialService {

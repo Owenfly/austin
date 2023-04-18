@@ -18,7 +18,6 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @author jwq
  * 支付宝小程序发送订阅消息实现
  */
 @Service

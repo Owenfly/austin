@@ -24,8 +24,6 @@ import org.springframework.stereotype.Component;
 import java.util.*;
 
 /**
- * @author 3y
- * @date 2022年5月23日
  * 发送短信接入文档：https://www.yunpian.com/official/document/sms/zh_CN/domestic_list
  */
 @Slf4j

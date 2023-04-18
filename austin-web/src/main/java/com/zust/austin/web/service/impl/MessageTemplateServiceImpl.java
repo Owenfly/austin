@@ -31,8 +31,6 @@ import java.util.Objects;
 /**
  * 消息模板管理 Service
  *
- * @author 3y
- * @date 2022/1/22
  */
 @Service
 public class MessageTemplateServiceImpl implements MessageTemplateService {

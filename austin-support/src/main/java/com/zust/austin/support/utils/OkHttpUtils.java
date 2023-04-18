@@ -11,10 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.Objects;
 
-/**
- * @author 3y
- * @date 2021/11/4
- */
+
 @Slf4j
 @Component
 public class OkHttpUtils {

@@ -19,7 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 /**
  * 素材管理接口
  *
- * @author 3y
+ *
  */
 @Slf4j
 @AustinAspect

@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- * @author 3y
+ *
  * 渠道账号信息
  */
 @Data

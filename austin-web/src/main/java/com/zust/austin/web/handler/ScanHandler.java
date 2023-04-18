@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 /**
- * @author 3y
+ *
  * 微信服务号扫码处理器
  */
 @Component("scanHandler")

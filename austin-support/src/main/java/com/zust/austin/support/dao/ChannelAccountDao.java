@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 渠道账号信息 Dao
  *
- * @author 3y
+ * @author wlp
  */
 public interface ChannelAccountDao extends JpaRepository<ChannelAccount, Long> {
 

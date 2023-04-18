@@ -11,7 +11,6 @@ import java.util.List;
 /**
  * 消息模板管理 接口
  *
- * @author 3y
  */
 public interface MessageTemplateService {
 

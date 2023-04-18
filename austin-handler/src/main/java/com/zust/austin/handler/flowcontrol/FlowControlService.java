@@ -3,7 +3,6 @@ package com.zust.austin.handler.flowcontrol;
 import com.zust.austin.common.domain.TaskInfo;
 
 /**
- * @author 3y
  * 流量控制服务
  */
 public interface FlowControlService {

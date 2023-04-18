@@ -13,9 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * @author 3y
- */
+
 @Service
 public class ChannelAccountServiceImpl implements ChannelAccountService {
 

@@ -22,12 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author kl
- * @version 1.0.0
- * @description 切面类
- * @date 2023/2/23 9:17
- */
+
 @Slf4j
 @Aspect
 @Component

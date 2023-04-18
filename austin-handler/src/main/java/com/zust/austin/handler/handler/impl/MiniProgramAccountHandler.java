@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author sunql
+ *
  * 微信小程序发送订阅消息
  */
 @Component

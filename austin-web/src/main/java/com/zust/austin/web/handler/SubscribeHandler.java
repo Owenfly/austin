@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 
 
 /**
- * @author 3y
+ *
  * 微信服务号 关注 事件 处理器
  * 将eventKey 存储在 redis
  */

@@ -9,8 +9,7 @@ import java.io.FileOutputStream;
 import java.net.URL;
 
 /**
- * @author 3y
- * @date 2023/2/14
+ * 获取文件工具类
  */
 @Slf4j
 public class AustinFileUtils {

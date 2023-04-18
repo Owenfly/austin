@@ -7,7 +7,6 @@ import org.springframework.web.multipart.MultipartFile;
 /**
  * 素材接口
  *
- * @author 3y
  */
 public interface MaterialService {
 

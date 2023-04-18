@@ -32,8 +32,6 @@ import java.util.stream.Collectors;
  * 编写工具类将 List/Object 铺平成 Map 以及相关的格式
  * https://baidu.gitee.io/amis/zh-CN/components/form/index#%E8%A1%A8%E5%8D%95%E9%A1%B9%E6%95%B0%E6%8D%AE%E5%88%9D%E5%A7%8B%E5%8C%96
  *
- * @author 3y
- * @date 2022/1/23
  */
 @Slf4j
 public class Convert4Amis {

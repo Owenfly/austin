@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 渠道账号接口
  *
- * @author 3y
+ *
  */
 public interface ChannelAccountService {
 

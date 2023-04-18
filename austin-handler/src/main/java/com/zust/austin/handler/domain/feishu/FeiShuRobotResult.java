@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 
 /**
- * @author 3y
+ *
  * 飞书机器人 返回值
  */
 @NoArgsConstructor

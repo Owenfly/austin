@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author jwq
+ *
  * 支付宝小程序参数
  */
 @Data

@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * 推送消息的param
  *
- * @author 3y
+ * @author wlp
  * https://docs.getui.com/getui/server/rest_v2/push/
  */
 @NoArgsConstructor

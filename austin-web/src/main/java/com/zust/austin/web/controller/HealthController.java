@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 健康检测
  *
- * @author 3y
+ *
  */
 @Slf4j
 @RestController
