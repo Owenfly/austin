@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * @author jwq
+ * @author wlp
  * 支付宝小程序发送订阅消息
  */
 @Component

@@ -28,7 +28,7 @@ import java.util.Objects;
 /**
  * 邮件发送处理
  *
- * @author 3y
+ * @author wlp
  */
 @Component
 @Slf4j

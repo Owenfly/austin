@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /**
  * 线程池工具类
  *
- * @author 3y
+ * @author wlp
  */
 @Component
 public class ThreadPoolUtils {

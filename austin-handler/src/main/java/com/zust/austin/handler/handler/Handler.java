@@ -4,13 +4,13 @@ import com.zust.austin.common.domain.TaskInfo;
 import com.zust.austin.support.domain.MessageTemplate;
 
 /**
- * @author 3y
+ * @author wlp
  * 消息处理器
  */
 public interface Handler {
 
     /**
-     * 处理器
+     * 执行处理
      *
      * @param taskInfo
      */

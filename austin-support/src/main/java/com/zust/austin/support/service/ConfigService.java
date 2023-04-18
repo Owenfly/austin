@@ -4,7 +4,7 @@ package com.zust.austin.support.service;
 /**
  * 读取配置服务
  *
- * @author 3y
+ * @author wlp
  */
 public interface ConfigService {
 

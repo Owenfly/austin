@@ -12,7 +12,7 @@ import javax.annotation.PostConstruct;
 import java.util.Objects;
 
 /**
- * @author 3y
+ * @author wlp
  * 发送各个渠道的handler
  */
 public abstract class BaseHandler implements Handler {
