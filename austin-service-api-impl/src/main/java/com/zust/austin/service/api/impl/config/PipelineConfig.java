@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -45,19 +46,19 @@ public class PipelineConfig {
     @Bean("commonSendTemplate")
     public ProcessTemplate commonSendTemplate() {
 
-        //ProcessTemplate processTemplate = new ProcessTemplate();
-        //processTemplate.setProcessList(Arrays.asList(preParamCheckAction, assembleAction,
-        //        afterParamCheckAction, sendMqAction));
-
         ProcessTemplate processTemplate = new ProcessTemplate();
-        ArrayList<BusinessProcess> processList = new ArrayList<>();
+        processTemplate.setProcessList(Arrays.asList(preParamCheckAction, assembleAction,
+                afterParamCheckAction, sendMqAction));
 
-        processList.add(preParamCheckAction);
-        processList.add(assembleAction);
-        processList.add(afterParamCheckAction);
-        processList.add(sendMqAction);
+        //ProcessTemplate processTemplate = new ProcessTemplate();
+        //ArrayList<BusinessProcess> processList = new ArrayList<>();
+        //
+        //processList.add(preParamCheckAction);
+        //processList.add(assembleAction);
+        //processList.add(afterParamCheckAction);
+        //processList.add(sendMqAction);
 
-        processTemplate.setProcessList(processList);
+        //processTemplate.setProcessList(processList);
 
         return processTemplate;
 
@@ -72,15 +73,15 @@ public class PipelineConfig {
      */
     @Bean("recallMessageTemplate")
     public ProcessTemplate recallMessageTemplate() {
-        //ProcessTemplate processTemplate = new ProcessTemplate();
-        //processTemplate.setProcessList(Arrays.asList(assembleAction, sendMqAction));
-
         ProcessTemplate processTemplate = new ProcessTemplate();
-        ArrayList<BusinessProcess> processList = new ArrayList<>();
-        processList.add(assembleAction);
-        processList.add(sendMqAction);
+        processTemplate.setProcessList(Arrays.asList(assembleAction, sendMqAction));
 
-        processTemplate.setProcessList(processList);
+        //ProcessTemplate processTemplate = new ProcessTemplate();
+        //ArrayList<BusinessProcess> processList = new ArrayList<>();
+        //processList.add(assembleAction);
+        //processList.add(sendMqAction);
+        //
+        //processTemplate.setProcessList(processList);
 
         return processTemplate;
     }

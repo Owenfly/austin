@@ -39,9 +39,5 @@ public class ProcessContext<T extends ProcessModel> {
      */
     BasicResultVO response;
 
-    //private String code;
-    //private T processModel;
-    //private Boolean needBreak;
-    //BasicResultVO response;
 
 }
