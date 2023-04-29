@@ -25,10 +25,6 @@ import java.util.List;
 
 /**
  * 刷新钉钉的access_token
- * <p>
- * https://open.dingtalk.com/document/orgapp-server/obtain-orgapp-token
- *
- * @author 3y
  */
 @Service
 @Slf4j

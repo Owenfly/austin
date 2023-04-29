@@ -4,7 +4,6 @@ package com.zust.austin.cron.xxl.enums;
 /**
  * 路由策略
  *
- * @author 3y
  */
 public enum ExecutorRouteStrategyEnum {
 

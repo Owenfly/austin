@@ -66,10 +66,7 @@ public class MessageTemplateController {
     @Value("${austin.business.upload.crowd.path}")
     private String dataPath;
 
-    /**
-     * 如果Id存在，则修改
-     * 如果Id不存在，则保存
-     */
+
     @PostMapping("/save")
     @ApiOperation("/保存数据")
     public MessageTemplate saveOrUpdate(@RequestBody MessageTemplate messageTemplate) {
@@ -93,18 +90,14 @@ public class MessageTemplateController {
         return MessageTemplateVo.builder().count(messageTemplates.getTotalElements()).rows(result).build();
     }
 
-    /**
-     * 根据Id查找
-     */
+
     @GetMapping("query/{id}")
     @ApiOperation("/根据Id查找")
     public Map<String, Object> queryById(@PathVariable("id") Long id) {
         return Convert4Amis.flatSingleMap(messageTemplateService.queryById(id));
     }
 
-    /**
-     * 根据Id复制
-     */
+
     @PostMapping("copy/{id}")
     @ApiOperation("/根据Id复制")
     public void copyById(@PathVariable("id") Long id) {
@@ -112,10 +105,6 @@ public class MessageTemplateController {
     }
 
 
-    /**
-     * 根据Id删除
-     * id多个用逗号分隔开
-     */
     @DeleteMapping("delete/{id}")
     @ApiOperation("/根据Ids删除")
     public void deleteByIds(@PathVariable("id") String id) {
@@ -126,9 +115,6 @@ public class MessageTemplateController {
     }
 
 
-    /**
-     * 测试发送接口
-     */
     @PostMapping("test")
     @ApiOperation("/测试发送接口")
     public SendResponse test(@RequestBody MessageTemplateParam messageTemplateParam) {
@@ -153,10 +139,6 @@ public class MessageTemplateController {
         return Convert4Amis.getTestContent(messageTemplate.getMsgContent());
     }
 
-
-    /**
-     * 撤回接口
-     */
     @PostMapping("recall/{id}")
     @ApiOperation("/撤回消息接口")
     public SendResponse recall(@PathVariable("id") String id) {
@@ -169,27 +151,19 @@ public class MessageTemplateController {
     }
 
 
-    /**
-     * 启动模板的定时任务
-     */
     @PostMapping("start/{id}")
     @ApiOperation("/启动模板的定时任务")
     public BasicResultVO start(@RequestBody @PathVariable("id") Long id) {
         return messageTemplateService.startCronTask(id);
     }
 
-    /**
-     * 暂停模板的定时任务
-     */
     @PostMapping("stop/{id}")
     @ApiOperation("/暂停模板的定时任务")
     public BasicResultVO stop(@RequestBody @PathVariable("id") Long id) {
         return messageTemplateService.stopCronTask(id);
     }
 
-    /**
-     * 上传人群文件
-     */
+
     @PostMapping("upload")
     @ApiOperation("/上传人群文件")
     public HashMap<Object, Object> upload(@RequestParam("file") MultipartFile file) {

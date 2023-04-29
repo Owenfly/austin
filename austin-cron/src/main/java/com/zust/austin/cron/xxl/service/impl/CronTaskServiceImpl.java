@@ -23,9 +23,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-/**
- * @author 3y
- */
 @Slf4j
 @Service
 public class CronTaskServiceImpl implements CronTaskService {

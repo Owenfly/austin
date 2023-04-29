@@ -26,13 +26,6 @@ import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * 【该类的逻辑不用看，没有什么意义】
- * for Amis!!! amis框架在【表单】回显的时候，不支持嵌套动态语法!!
- * 编写工具类将 List/Object 铺平成 Map 以及相关的格式
- * https://baidu.gitee.io/amis/zh-CN/components/form/index#%E8%A1%A8%E5%8D%95%E9%A1%B9%E6%95%B0%E6%8D%AE%E5%88%9D%E5%A7%8B%E5%8C%96
- *
- */
 @Slf4j
 public class Convert4Amis {
 

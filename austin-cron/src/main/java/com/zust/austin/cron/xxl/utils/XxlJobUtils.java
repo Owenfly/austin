@@ -20,8 +20,6 @@ import java.util.Objects;
 
 /**
  * xxlJob工具类
- *
- * @author 3y
  */
 @Component
 public class XxlJobUtils {

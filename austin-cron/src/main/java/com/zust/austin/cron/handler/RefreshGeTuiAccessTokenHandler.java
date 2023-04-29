@@ -27,10 +27,6 @@ import java.util.List;
 
 /**
  * 刷新个推的token
- * <p>
- * https://docs.getui.com/getui/server/rest_v2/token/
- *
- * @author 3y
  */
 @Service
 @Slf4j

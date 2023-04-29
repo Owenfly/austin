@@ -4,7 +4,6 @@ package com.zust.austin.cron.xxl.constants;
 /**
  * xxl-job常量信息
  *
- * @author 3y
  */
 public class XxlJobConstant {
 

@@ -7,7 +7,6 @@ import com.zust.austin.cron.xxl.entity.XxlJobInfo;
 /**
  * 定时任务服务
  *
- * @author 3y
  */
 public interface CronTaskService {
 
