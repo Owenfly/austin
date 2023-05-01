@@ -66,9 +66,7 @@ public class TaskHandlerImpl implements TaskHandler {
 
     /**
      * 文件遍历结束时
-     * 1. 暂停单线程池消费(最后会回收线程池资源)
-     * 2. 更改消息模板的状态(暂未实现)
-     *
+     * 暂停单线程池消费(最后会回收线程池资源)
      * @param row
      * @param countCsvRow
      * @param crowdBatchTaskPending

@@ -42,7 +42,7 @@ public class XxlJobUtils {
     public XxlJobInfo buildXxlJobInfo(MessageTemplate messageTemplate) {
 
         String scheduleConf = messageTemplate.getExpectPushTime();
-        // 如果没有指定cron表达式，说明立即执行(给到xxl-job延迟5秒的cron表达式)
+        // 如果没有指定cron表达式，说明立即执行,设置10秒的延迟
         if (messageTemplate.getExpectPushTime().equals(String.valueOf(CommonConstant.FALSE))) {
             scheduleConf = DateUtil.format(DateUtil.offsetSecond(new Date(), XxlJobConstant.DELAY_TIME), CommonConstant.CRON_FORMAT);
         }

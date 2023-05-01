@@ -27,7 +27,7 @@ public class CronTaskHandler {
     private DtpExecutor dtpExecutor = CronAsyncThreadPoolConfig.getXxlCronExecutor();
 
     /**
-     * 处理后台的 austin 定时任务消息
+     * 处理后台定时任务消息
      */
     @XxlJob("austinJob")
     public void execute() {
