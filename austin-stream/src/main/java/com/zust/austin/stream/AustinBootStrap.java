@@ -23,19 +23,19 @@ public class AustinBootStrap {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
         /**
-         * 1.获取KafkaConsumer
+         * 获取KafkaConsumer
          */
         KafkaSource<String> kafkaConsumer = MessageQueueUtils.getKafkaConsumer(AustinFlinkConstant.TOPIC_NAME, AustinFlinkConstant.GROUP_ID, AustinFlinkConstant.BROKER);
         DataStreamSource<String> kafkaSource = env.fromSource(kafkaConsumer, WatermarkStrategy.noWatermarks(), AustinFlinkConstant.SOURCE_NAME);
 
 
         /**
-         * 2. 数据转换处理
+         * 数据转换处理
          */
         SingleOutputStreamOperator<AnchorInfo> dataStream = kafkaSource.flatMap(new AustinFlatMapFunction()).name(AustinFlinkConstant.FUNCTION_NAME);
 
         /**
-         * 3. 将实时数据多维度写入Redis(已实现)，离线数据写入hive(未实现)
+         * 将实时数据多维度写入Redis
          */
         dataStream.addSink(new AustinSink()).name(AustinFlinkConstant.SINK_NAME);
         env.execute(AustinFlinkConstant.JOB_NAME);

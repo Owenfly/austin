@@ -17,7 +17,6 @@ import java.util.List;
 /**
  * 消息进 redis/hive
  *
- * @author 3y
  */
 @Slf4j
 public class AustinSink implements SinkFunction<AnchorInfo> {

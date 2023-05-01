@@ -5,11 +5,7 @@ import com.zust.austin.common.domain.AnchorInfo;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.util.Collector;
 
-/**
- * @author 3y
- * @date 2022/2/22
- * process 处理
- */
+
 public class AustinFlatMapFunction implements FlatMapFunction<String, AnchorInfo> {
 
     @Override
