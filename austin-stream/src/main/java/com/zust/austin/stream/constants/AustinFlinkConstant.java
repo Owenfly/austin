@@ -15,7 +15,7 @@ public class AustinFlinkConstant {
     /**
      * redis 配置
      */
-    public static final String REDIS_IP = "139.9.66.219";
+    public static final String REDIS_IP = "austin-redis";
     public static final String REDIS_PORT = "6379";
     public static final String REDIS_PASSWORD = "austin";
 

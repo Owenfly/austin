@@ -12,7 +12,6 @@ import org.apache.flink.table.catalog.hive.HiveCatalog;
  * <p>
  * 接受Kafka的消息 写入hive表中
  *
- * @author 3y
  */
 public class AustinHiveBootStrap {
 

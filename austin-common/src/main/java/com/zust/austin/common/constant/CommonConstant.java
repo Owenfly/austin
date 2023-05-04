@@ -1,9 +1,6 @@
 package com.zust.austin.common.constant;
 
 
-/**
- * @author wlp
- */
 public class CommonConstant {
 
     public final static String PERIOD = ".";

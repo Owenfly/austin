@@ -43,7 +43,7 @@ public class ShieldServiceImpl implements ShieldService {
         }
 
         /**
-         * 结合 分布式任务定时任务
+         * 实现夜间屏蔽，隔日送达
          */
         if (isNight()) {
             if (ShieldType.NIGHT_SHIELD.getCode().equals(taskInfo.getShieldType())) {

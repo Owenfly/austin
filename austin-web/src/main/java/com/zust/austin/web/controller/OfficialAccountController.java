@@ -109,8 +109,7 @@ public class OfficialAccountController {
 
     /**
      * 接收微信的事件消息
-     * https://developers.weixin.qq.com/doc/offiaccount/Basic_Information/Access_Overview.html
-     * 临时给微信服务号登录使用，正常消息推送平台不会有此接口
+     * 临时给微信服务号登录使用
      *
      * @return
      */
@@ -160,7 +159,7 @@ public class OfficialAccountController {
     }
 
     /**
-     * 临时给微信服务号登录使用（生成二维码），正常消息推送平台不会有此接口
+     * 临时给微信服务号登录使用（生成二维码）
      * 返回二维码图片url 和 sceneId
      *
      * @return
@@ -186,7 +185,7 @@ public class OfficialAccountController {
     }
 
     /**
-     * 临时给微信服务号登录使用（给前端轮询检查是否已登录），正常消息推送平台不会有此接口
+     * 临时给微信服务号登录使用（给前端轮询检查是否已登录）
      *
      * @return
      */

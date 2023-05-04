@@ -8,8 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AustinApplication {
     public static void main(String[] args) {
 
-        System.setProperty("apollo.config-service", "http://austin-apollo-config:8080");
         SpringApplication.run(AustinApplication.class, args);
+
+        //开启apollo动态配置
+        System.setProperty("apollo.config-service", "http://austin-apollo-config:8080");
     }
 }
 

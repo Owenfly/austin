@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 消息进 redis/hive
+ * 消息进 redis
  *
  */
 @Slf4j
