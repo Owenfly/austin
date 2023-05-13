@@ -19,9 +19,9 @@ public enum MessageType implements PowerfulEnum {
      */
     NOTICE(10, "通知类消息", "notice"),
     /**
-     * 营销类消息
+     * 提醒类消息
      */
-    MARKETING(20, "营销类消息", "marketing"),
+    MARKETING(20, "提醒类消息", "marketing"),
     /**
      * 验证码消息
      */

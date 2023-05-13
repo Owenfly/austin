@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 企业微信群机器人 消息处理器
+ * 飞书机器人 消息处理器
  *
  * @author wlp
  */
